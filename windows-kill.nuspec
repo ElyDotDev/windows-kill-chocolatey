@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>windows-kill</id>
+    <version>1.1.0</version>
+    <packageSourceUrl>https://github.com/alirdn/windows-kill</packageSourceUrl>
+    <owners>alirdn</owners>
+    <title>windows-kill (Commandline)</title>
+    <authors>alirdn</authors>
+    <projectUrl>http://projects.allii.ir/list/windows-kill/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/alirdn/windows-kill-chocolatey/db795315/resources/icon.png</iconUrl>
+    <licenseUrl>https://github.com/alirdn/windows-kill-chocolatey/blob/master/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/alirdn/windows-kill</projectSourceUrl>
+    <docsUrl>http://projects.allii.ir/list/windows-kill/</docsUrl>
+    <bugTrackerUrl>https://github.com/alirdn/windows-kill/issues</bugTrackerUrl>
+    <tags>windows kill signal send x86 x64</tags>
+    <summary>Send signal to process by PID in Windows, like POSIX kill.</summary>
+    <description>Send signal to process by PID in Windows, like POSIX kill
+      Windows has no process signaling mechanism like what POSIX provide using the kill command. But windows-kill could send signal to process by PID
+      
+      ## Features
+      * Support both 32bit (Win32) and 64bit (x64) Windows
+      * Support both SIGNBREAK (Ctrl + Break) and SIGINT (Ctrl + C) Signals
+      
+      ## Usage Examples
+      Using the **windows-kill** is easy and straightforward. It's just like POSIX kill. If signal sending was successful or any error occurred during the sending, appropriate message will be printed in cmd.
+      
+      ### Sending signal to PID
+      ```
+      windows-kill -SIGNALTYPE PID
+      ```
+
+      ### Sending SIGBREAK (Ctrl + Break) to sample 1234 PID
+      ```
+      windows-kill -SIGBREAK 1234
+      windows-kill -1 1234
+      ```
+
+      ### Sending SIGINT (Ctrl + C) to sample 1234 PID
+      ```
+      windows-kill -SIGINT 1234
+      windows-kill -2 1234
+      ```
+
+      ### List supported signal types
+      ```
+      windows-kill -l
+      ```
+
+      ### Usage help
+      ```
+      windows-kill -h
+      ```
+
+      ## Notes
+      - To force the installation of x32 version, use the `--x86` argument with `choco install`.</description>
+    <releaseNotes>https://github.com/alirdn/windows-kill/commits/master</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
