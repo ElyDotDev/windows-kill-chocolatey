@@ -51,9 +51,7 @@
       ```
       windows-kill -h
       ```
-
-      ## Notes
-      - To force the installation of x32 version, use the `--x86` argument with `choco install`.</description>
+    </description>
     <releaseNotes>https://github.com/alirdn/windows-kill/commits/master</releaseNotes>
   </metadata>
   <files>
