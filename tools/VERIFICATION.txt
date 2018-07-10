@@ -7,22 +7,22 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/alirdn/windows-kill/releases/download/1.1.0/windows-kill_1.1.0_release_x86.zip
-   x64: https://github.com/alirdn/windows-kill/releases/download/1.1.0/windows-kill_1.1.0_release_x64.zip
+   x32: https://github.com/alirdn/windows-kill/releases/download/1.1.1/windows-kill_Win32_1.1.1_lib_release.zip
+   x64: https://github.com/alirdn/windows-kill/releases/download/1.1.1/windows-kill_x64_1.1.1_lib_release.zip
 
-   to download the installer.
+   to download the program zip archive.
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: F48EDFD2A80CF5EE45BB31D6AA1D7B2DEECCB19254417BE7C5A8E528016657D3
-   checksum64: 9C1C3BAD496FB8A89EA0815DA8F0D624D9BD07689F302522C301853870557083
+   checksum32: 1959DD6F313606F68E04617117F875B24C12743AE846071B8FE87E64A572C40A
+   checksum64: 3433646542ED91104B1259FDEFC07950054AC784BD9E9E7D046925E92AAAD659
 
 Using AU:
 
-   Get-RemoteChecksum https://github.com/alirdn/windows-kill/releases/download/1.1.0/windows-kill_1.1.0_release_x86.zip
-   Get-RemoteChecksum https://github.com/alirdn/windows-kill/releases/download/1.1.0/windows-kill_1.1.0_release_x64.zip
+   Get-RemoteChecksum https://github.com/alirdn/windows-kill/releases/download/1.1.1/windows-kill_Win32_1.1.1_lib_release.zip
+   Get-RemoteChecksum https://github.com/alirdn/windows-kill/releases/download/1.1.1/windows-kill_x64_1.1.1_lib_release.zip
 
 File 'license.txt' is obtained from:
    https://github.com/alirdn/windows-kill/blob/master/LICENSE

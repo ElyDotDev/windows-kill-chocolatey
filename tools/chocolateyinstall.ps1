@@ -4,8 +4,8 @@ $toolsPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName = $env:ChocolateyPackageName
-  file        = "$toolsPath\archives\windows-kill_1.1.0_release_x86.zip"
-  file64      = "$toolsPath\archives\windows-kill_1.1.0_release_x64.zip"
+  file        = "$toolsPath\archives\windows-kill_Win32_1.1.1_lib_release.zip"
+  file64      = "$toolsPath\archives\windows-kill_x64_1.1.1_lib_release.zip"
   destination = $toolsPath
 }
 
